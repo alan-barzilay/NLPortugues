@@ -5,3 +5,4 @@ seaborn
 tensorflow
 matplotlib
 scikit-learn
+ipykernel
