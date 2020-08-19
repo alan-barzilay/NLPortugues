@@ -16,7 +16,7 @@ Para poder completar os exercícios aqui propostos, a maneira mais fácil é faz
 Para instalar as bibliotecas necessárias basta utilizar o comando `pip install -r requirements.txt`, independente de estar usando um `venv` ou não.
 
 
-Para poder utilizar seu venv como um kernel de Jupyter notebook, vc precisara executar o comando `ipython kernel install --user --name=nome_do_venv`. Para mais detalhes, [esse link](https://anbasile.github.io/posts/2017-06-25-jupyter-venv/) pode ser útil.
+Para poder utilizar seu venv como um kernel de Jupyter notebook, você precisará executar o comando `ipython kernel install --user --name=nome_do_venv`. Para mais detalhes, [esse link](https://anbasile.github.io/posts/2017-06-25-jupyter-venv/) pode ser útil.
 
 
 
