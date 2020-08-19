@@ -1,7 +1,7 @@
 ![Logo do curso](https://github.com/alan-barzilay/NLPortugues/blob/master/imagens/logo_nlportugues.png "Logo do curso") 
 ---------------------------------
 
-Este repositório contém os materiais e exercícios da matéria MAC5725 - Linguística Computacional Ministrada no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP).
+Este repositório contém os materiais e exercícios da matéria MAC5725 - Linguística Computacional ministrada no Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP).
 
 
 
