@@ -6,3 +6,4 @@ tensorflow
 matplotlib
 scikit-learn
 ipykernel
+gensim
