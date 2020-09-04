@@ -6,4 +6,8 @@ tensorflow
 matplotlib
 scikit-learn
 ipykernel
+<<<<<<< HEAD
 jupyter
+=======
+gensim
+>>>>>>> 17a763d06b62f9603a8f9b8284b4c38c3798ba04
