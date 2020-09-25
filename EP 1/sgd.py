@@ -11,8 +11,8 @@ import os.path as op
 
 
 def load_saved_params():
-    """ 
-    Função auxiliar que carrega parametros salvos 
+    """
+    Função auxiliar que carrega parametros salvos
     anteriormente e resseta contador de iterações
     """
     st = 0
@@ -49,16 +49,16 @@ def sgd(f,
     """ Stochastic Gradient Descent
 
     Implemente o algoritmo de gradiente descendente nessa função
-    
+
 
     Argumentos:
-    f -- A função a ser otimizada, ela deve receber um único argumento 
+    f -- A função a ser otimizada, ela deve receber um único argumento
         e retornar dois outputs, a loss e o gradiente em relação ao argumento
     x0 -- O ponto inicial de onde começar SGD
     step -- tamanho do passo do SGD
     iterations -- número total de iterações que o SGD deve realizar
     postprocessing -- função de pós-processamento para os parâmetros caso necessário.
-                      No caso de wrod2vec nós iremos normalizar 
+                      No caso de wrod2vec nós iremos normalizar
                       os vetores de palavras para possuir comprimento unitârio.
     PRINT_EVERY -- Especifica de quantas em quantas iterações imprimimos a loss
 
@@ -92,7 +92,8 @@ def sgd(f,
 
         loss = None
         ### Seu Código Aqui (~2 lines)
-
+        loss, gradient = f(x)
+        x = x - step * gradient
         ### Seu código acaba aqui
 
         x = postprocessing(x)
