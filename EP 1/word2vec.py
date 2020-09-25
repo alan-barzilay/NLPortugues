@@ -55,12 +55,13 @@ def naiveSoftmaxLossAndGradient(centerWordVec, outsideWordIdx, outsideVectors,
     ### Use a função softmax fornecida (importada anteriormente neste arquivo)
     ### Esta implementação numericamente estável ajuda a evitar problemas causados
     ### por estouro de inteiro (integer overflow).
-    y_hat = softmax(np.inner(outsideVectors, centerWordVec))
+    y_hat = softmax(np.dot(outsideVectors, centerWordVec))
     y = np.zeros(y_hat.shape) #one_hot
     loss = -np.log(y_hat[outsideWordIdx]) #palavra observada
     y[outsideWordIdx] = 1
-    gradCenterVec = np.matmul(outsideVectors.T, (y_hat - y))
-    gradOutsideVecs = np.inner((y_hat - y).reshape(-1,1), centerWordVec.reshape(-1,1))
+    gradCenterVec = np.dot(outsideVectors.T, (y_hat - y))
+    gradOutsideVecs = np.dot((y_hat - y).reshape(-1,1),
+            centerWordVec.reshape(1,-1))
 
     ### END YOUR CODE
     return loss, gradCenterVec, gradOutsideVecs
@@ -102,7 +103,26 @@ def negSamplingLossAndGradient(centerWordVec,
     indices = [outsideWordIdx] + negSampleWordIndices
 
     ### Seu código aqui  (~10 Lines)
+    u_o = outsideVectors[outsideWordIdx] #vetor com 1 elemento
+    u_k = outsideVectors[negSampleWordIndices] #vetor com n elementos
+    v_c = centerWordVec
+    loss_first_part = -np.log(sigmoid(np.dot(u_o, v_c)))
+    loss_second_part = np.sum(np.log(sigmoid(np.dot(-u_k,v_c))))
 
+    loss = loss_first_part - loss_second_part
+
+    partial_vc_first = -(1-sigmoid(np.dot(u_o, v_c)))*u_o
+    partial_vc_second = np.dot((1 - sigmoid(np.dot(-u_k,v_c))), u_k)
+
+    gradCenterVec = partial_vc_first + partial_vc_second
+
+    gradOutsideVecs = np.zeros(outsideVectors.shape)
+
+    partial_u_o = (-(1-sigmoid(np.dot(u_o,v_c))))*v_c
+    gradOutsideVecs[outsideWordIdx] = partial_u_o
+    for idx, negSampleWordIdx in enumerate(negSampleWordIndices):
+        partial_u_k = (1- sigmoid(-np.dot(u_k[idx], v_c)))*v_c
+        gradOutsideVecs[negSampleWordIdx] += partial_u_k
     ### Use sua implementação da função sigmoid aqui.
 
     return loss, gradCenterVec, gradOutsideVecs
