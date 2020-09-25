@@ -92,7 +92,8 @@ def sgd(f,
 
         loss = None
         ### Seu Código Aqui (~2 lines)
-        loss, gradient = f(x)
+        current_loss, gradient = f(x)
+        loss = current_loss
         x = x - step * gradient
         ### Seu código acaba aqui
 
