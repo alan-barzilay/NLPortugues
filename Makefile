@@ -49,6 +49,10 @@ black-check:
 black:
 	black --exclude="build/|buck-out/|dist/|_build/|pip/|env/|\.pip/|\.git/|\.hg/|\.mypy_cache/|\.tox/|\.venv/" .
 
+.PHONY: checks
+## perform code standards and style checks
+checks: flake-check black-check
+
 .PHONY: profile
 ## show project environment profile
 profile:
