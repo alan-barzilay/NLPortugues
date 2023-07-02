@@ -250,7 +250,7 @@ footer {
   padding-bottom: 2rem;
 }
 .usp_logo_texto {
-  width: clamp(17.5rem, 40vw + 1rem, 31.1875rem);
+  width: 31.1875rem;
   height: auto;
 }
 .usp_logo {
