@@ -8,10 +8,35 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=SZcS3EX9IbbyeJ8aOluD52KXgUA_7Ed1I13G853Cp9duUYHhZVthp3nOYZEFhgL4FFFZYTHERc2AaPtBsPPNNs0mP5cLUX8IoB_jqKe3kPEnuP3CaEZkt-6yvmaA3E3RKrTM9qzKNHm4gXYLxwqd4N5lMwGwfifRWufNhh81SmjVk8A2XKPs8DNlj31_T-Psq370wwddjIDaAyMhgDmM101RL79z2IxWE8I&skey=4a4e989029e781df&v=v9)
+    format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=k3kPo8UDI-1M0wlSV9XAw6lQkqWY8Q82sIyfKf-Ena1BQN3_0V54wgRYGnzQFYYSZCpT_RV8miFdX_XaDc0WjBUz4XZ6vPpB3jawg0vpWV9wlIIK64HgpHaWnFCC5t9Gfw2Os8kNJlqYtpxAx4Q1XJqr22azsG8X9oRJeZRQPxKCbj-SowBdANORwgAgkGCWeTJYlFWaHVbsPI69qRmHP3bN_Md1z-FJ9pos8Drg7tnJjv1uTXe-fHoShZkOlpPzDaTKlCI_KYeXYIv-pwPU2BabzSSih96ps6UsOI7QqDt4g8XsV6z8vTpIVBTsRVEKGcprrPP1HxYii-Yxla4m-RCshn6ge-Y3gVY7igi1T8a_tRcOZYL5isd3Dej2tfOVK0Xd6g_vYDjqBx4UnX1AdI4jkenRIAXSxgONO2IGmSr2TtQ_rmXmTMzLIeOh_QkbUwnGlcxHKh9mHlOvoLRuaq3-8MT0XZey1aGi-9R_gvKhFPBJCiaQL2MgX3B8zu1TBUJj2bZu&skey=8131191f4580dfcb&v=v18)
+    format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=k3kPo8UDI-1M0wlSV9XAw6lQkqWY8Q82sIyfKf-Ena1BQN3_0V54wgRYGnzQFYYSZCpT_RV8miFdX_XaDc0WjBUz4XZ6vPpB3jawg0vpWV9wlIIK64HgpHaWnFCC5t9Gfw2Os8kNJlqYtpxAx4Q1XJqr22azsG8X9oRJeZRQPxKCbj-SowBdANORwgAgkGCWeTJYlFWaHVbsPI69qRmHP3bN_Md1z-FJ9pos8Drg7tnJjv1uTXe-fHoShZkOlpPzDaTKlCI_KYeXYIv-pwPU2BabzSSih96ps6UsOI7QqDt4g8XsV6z8vTpIVBTsRVEKGcprrPP1HxYii-Yxla4m-RCshn6ge-Y3gVY7igi1T8a_tRcOZYL5isd3Dej2tfOVK0Xd6g_vYDjqBx4UnX1AdI4jkenRIAXSxgONO2IGmSr2TtQ_rmXmTMzLIeOh_QkbUwnGlcxHKh9mHlOvoLRuaq3-8MT0XZey1aGi-9R_gvKhFPBJCiaQL2MgX3B8zu1TBUJj2bZu&skey=8131191f4580dfcb&v=v18)
+    format("woff2");
+}
 body {
   background-color: var(--bege);
   color: var(--preto);
-
   font-family: "Wix Madefor Display";
   font-weight: 800;
   font-size: 16px;
