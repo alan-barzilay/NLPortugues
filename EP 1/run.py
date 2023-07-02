@@ -45,7 +45,7 @@ wordVectors = sgd(lambda vec: word2vec_sgd_wrapper(
                   True,
                   PRINT_EVERY=100)
 # Note que não realizamos normalização aqui. Isso não é um bug,
-# normalizar durante treinamento perde an noção de comprimento.
+# normalizar durante treinamento perde a noção de comprimento.
 
 print(
     "Teste sanitário: loss ao final do treinamento deve ser por volta ou menor que 10"
