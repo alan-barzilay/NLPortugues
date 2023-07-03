@@ -288,7 +288,7 @@ footer {
   height: auto;
 }
 @media (max-width: 576px) {
-  h1 {
+  h1, .curso2>h2{
     text-align: center;
   }
   .hero {
