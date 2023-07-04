@@ -113,7 +113,7 @@ em {
 .hero {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr minmax(20rem, 62.5rem) 1fr;
+  grid-template-columns: 1fr minmax(17.5rem, 62.5rem) 1fr;
   grid-template-areas:
     "....  logo   ...."
     "....  title  ...."
@@ -131,6 +131,7 @@ em {
   max-width: 48.125rem;
   grid-area: title;
   align-self: center;
+  font-size: 60px;
 }
 .pln::before {
   content: "Processamento de Linguagem Natural";
@@ -316,5 +317,8 @@ footer {
     background-image: url("./imgs/BG_Hero-430.avif");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .hero_title {
+  font-size: 48px;
   }
 }
