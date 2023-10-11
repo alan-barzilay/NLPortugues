@@ -89,12 +89,16 @@ a:visited {
   color: #6b1616;
 }
 li {
-  color: var(--verde);
   font-family: "Archivo";
   font-weight: 400;
-  max-width: 20.625rem;
+  max-width: 21rem;
   line-height: 1.5rem;
+  list-style-position: inside;
 }
+li > ul {
+  padding-left:25px;
+}
+
 hr {
   border: 0;
   border-top: solid #f0f1eb41;
@@ -225,6 +229,8 @@ em {
   font-family: "Archivo";
   font-weight: 700;
   margin-bottom: 2.09rem;
+  color: var(--verde);
+
 }
 .curso2 {
   margin-top: 6.25rem;
