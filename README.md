@@ -1,4 +1,8 @@
-## ![Logo do curso](https://github.com/alan-barzilay/NLPortugues/blob/master/imagens/logo_nlportugues.png "Logo do curso")
+<p align="center">
+  <img  src="https://raw.githubusercontent.com/alan-barzilay/NLPortugues/32cc2e0f1f10af0bdf516603475a3bfa0653c556/imagens/logo_nlportugues.png">
+</p>
+
+---
 
 Este repositório contém os materiais e exercícios do curso NLPortuguês, hospedado tambem no coursera sob o nome [Processamento Neural de Linguagem Natural em Português I](https://www.coursera.org/learn/processamento-neural-linguagem-natural-em-portugues-i). Para consultar os slides utilizados nas aulas, eles estão disponíveis neste repositório e no [site oficial do curso](https://alan-barzilay.github.io/NLPortugues/index.html).
 
