@@ -3,8 +3,6 @@
 import numpy as np
 import random
 
-from utils.gradcheck import gradcheck_naive, grad_tests_softmax, grad_tests_negsamp
-
 
 def sigmoid(x):
     """
