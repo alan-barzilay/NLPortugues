@@ -565,6 +565,9 @@ def test_word2vec():
         skipgram, dummy_tokens, dummy_vectors, dataset, negSamplingLossAndGradient
     )
 
+def main():
+    # main pro autograder do coursera, não mexer
+    test_word2vec()
 
 if __name__ == "__main__":
     test_word2vec()
