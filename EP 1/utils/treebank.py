@@ -12,11 +12,11 @@ import pandas as pd
 class B2WSentiment:
     def __init__(self, path=None, tablesize=1000000):
         if not path:
-            path = "data/B2W-Reviews01.csv"
+            path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'data/b2w.csv'))
 
         self.path = path
-        self.df = pd.read_csv(path, nrows=15000, sep=';')[[
-            "review_text", "overall_rating"
+        self.df = pd.read_csv(path, nrows=15000, sep=',', quotechar='"')[[
+            "review_text", "rating"
         ]].drop_duplicates(subset=['review_text'])
         self.tablesize = tablesize
 
